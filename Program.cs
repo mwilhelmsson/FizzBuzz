@@ -6,15 +6,13 @@ namespace fizzbuzz
     {
         static void Main(string[] args)
         {
-            const int FIZZ = 3;
-            const int BUZZ = 5;
 
             for(int i = 1; i <= 100; i++){
                 var output = "";
 
-                if(i % FIZZ == 0)
+                if(i % 3 == 0)
                     output += "Fizz";
-                if(i % BUZZ == 0)
+                if(i % 5 == 0)
                     output += "Buzz";
                 
                 if(output == "")
